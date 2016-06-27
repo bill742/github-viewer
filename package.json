@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github-viewer.bill742.git"
+    "url": "https://github.com/bill742/github-viewer"
   },
   "devDependencies": {
     "browser-sync": "^2.9.1",
