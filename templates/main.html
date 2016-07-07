@@ -1,8 +1,11 @@
 <div>
-  {{ countdown }}
-  <form name="searchUser" ng-submit="search(username)">
-    <input type="search" required="" placeholder="Username to find" ng-model="username" />
-    <input type="submit" value="Search" ng-click="search(username)" />
+  <!-- {{ countdown }} -->
+  <form name="searchUser" class="searchForm" ng-submit="search(username)">
+    <input type="search" class="search" required="" placeholder="Username to find" ng-model="username" />
+    <a class="clear" ng-click="username = null">
+      <span class="glyphicon glyphicon-remove"></span>
+    </a>
+    <input type="submit" value="Search" class="submit" ng-click="search(username)" />
   </form>
   <div ng-include="userdetails.html" ng-show="user"></div>
 </div>
