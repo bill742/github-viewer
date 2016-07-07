@@ -3,12 +3,9 @@
 *.sublime-workspace
 *.sublime-project
 
-# PhotoShop Design Files #
+# Unnecessary directories #
 ########################
-*.psd
-
-# Backup Folder #
-#################
+/node_modules
 /backup
 
 # Compiled source #
