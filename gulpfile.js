@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat');
     uglify = require('gulp-uglify');
+    sourcemaps = require('gulp-sourcemaps');
 
 var outputDir,
     jsSources,
@@ -24,6 +25,8 @@ gulp.task('sass', function(){
     .pipe(sass({
       outputStyle: 'compressed'
     }))
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
