@@ -9,11 +9,11 @@
         controller: "MainController"
       })
       .when("/user/:username", {
-        templateUrl: "../templates/user.html",
+        templateUrl: "templates/user.html",
         controller: "UserController"
       })
       .when("/repo/:username/:reponame", {
-        templateUrl: "../templates/repo.html",
+        templateUrl: "templates/repo.html",
         controller: "RepoController"
       })
       .otherwise({redirectTo:"/main"});
