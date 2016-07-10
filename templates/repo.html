@@ -1,9 +1,11 @@
-<h2>{{repo.name}}</h2>
-
-<a href="#/main" class="back">Back to Search</a>
-<a href="#/user/{{repo.owner.login}}" class="back">Back to {{repo.owner.login}}</a>
+<div class="nav-container">
+  <a href="#/user/{{repo.owner.login}}" class="backRepo"><span class="glyphicon glyphicon-arrow-left"></span> Back to {{repo.owner.login}}</a>
+  <div class="mid"> </div>
+  <a href="#/main" class="back"><span class="glyphicon glyphicon-arrow-left"></span> Search</a>
+</div>
 
 <div>
+  <h3>{{repo.name}}</h3>
   Issues: {{repo.open_issues_count}}
 </div>
 

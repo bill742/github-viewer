@@ -1,16 +1,20 @@
-<div>
+<div class="userHeader">
+  <p class="error">{{ error }}</p>
+  <img ng-src="{{user.avatar_url}}" title="{{user.name}}" alt="{{user.name}}" class="avatar">
   <h2>{{user.name}}</h2>
-  {{ error }}
-  <img ng-src="{{user.avatar_url}}" title="{{user.name}}" class="avatar">
 </div>
 
-<div class="sort">
-  Sort by:
-  <select ng-model="repoSortOrder">
-    <option value="+name">Name</option>
-    <option value="-stargazers_count">Stars</option>
-    <option value="+language">Language</option>
-  </select>
+<div class="nav-container">
+  <a href="#/main" class="back"><span class="glyphicon glyphicon-arrow-left"></span> Search</a>
+  <div class="mid"> </div>
+  <div class="sort">
+    Sort by:
+    <select ng-model="repoSortOrder">
+      <option value="+name">Name</option>
+      <option value="-stargazers_count">Stars</option>
+      <option value="+language">Language</option>
+    </select>
+  </div>
 </div>
 
 <table>
@@ -31,5 +35,3 @@
     </tr>
   </tbody>
 </table>
-
-<a href="#/main" class="back">Back to Search</a>

@@ -1,6 +1,6 @@
 .wrapper
   width: 80%
-  margin: 0 auto
+  margin: 0 auto 30px
 
 a
   &:hover
@@ -12,11 +12,12 @@ h1
   text-align: center
 
 .searchForm
-  width: 25%
+  width: 30%
   margin: 20px auto
 
 .search
-  padding: 6px
+  width: 65%
+  display: inline
 
 .clear
   position: relative
@@ -25,22 +26,50 @@ h1
   &:hover
     text-decoration: none
 
-.submit
-  padding: 8px
-
-.sort
-  padding: 20px 0
-
 // Results
+.nav-container
+  font-size: 16px
+  padding-bottom: 20px
+  display: flex
+  align-content: space-between
+
+.mid
+  flex: 1
+
+.back
+  margin-left: auto
+
+.userHeader
+  margin: 20px 0
+
+.error
+  font-size: 16px
+  text-align: center
+  color: red
+
 .avatar
   width: 80px
   height: auto
+
+h2
+  line-height: 80px
+  margin: 0 10px
+  display: inline-block
+  vertical-align: middle
 
 table
   width: 100%
 
   td, th
     padding: 6px
+    width: 25%
+
+    &:first-child
+      padding-left: 0
+
+    &:nth-child(4)
+      text-align: right
+      padding-right: 0
 
 .contrib
 
@@ -50,7 +79,3 @@ table
   li
     margin: 10px 0
     list-style-type: none
-
-.back
-  margin: 20px 10px 20px 0
-  display: block
