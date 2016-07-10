@@ -2,7 +2,7 @@
 
   var app = angular.module("githubViewer");
 
-  var MainController = function($scope, $interval, $location) {
+  var MainController = function($scope, $interval, $location, $window) {
 
     // var decrementCountdown = function(){
     //   $scope.countdown -= 1;
@@ -27,6 +27,13 @@
     $scope.username = "angular";
     $scope.countdown = 10;
     //startCountdown();
+
+    // Clear and focus search input
+    $scope.clearSearch = function(){
+      $scope.username = null;
+      var element = $window.document.getElementById("searchBox");
+      element.focus();
+    }
 
   };
 
